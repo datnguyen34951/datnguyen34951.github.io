@@ -1,0 +1,26 @@
+img{
+	width: 50% ;
+    height: auto;}
+
+h2{
+	font-size: 25px;
+	color: red;}
+p{
+	font-size: 20px;}
+
+a{ 
+	font-size: 30px;
+	padding: 15px;
+ }
+a:link{
+	color: black
+}
+a:visited{
+	color: violet;
+}
+a:hover{
+	color: blue
+}
+a:active{
+	color: green
+}
