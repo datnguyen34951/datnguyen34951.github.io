@@ -118,11 +118,11 @@ img{
 }
 #main-menu > a:first-child {
 	position: absolute;
-    padding: 4px;
-    background-color: #FFFFFF;
-    border-radius: 50%;
-    top: -125px;
-    left: 62px;
+	padding: 4px;
+	background-color: #FFFFFF;
+	border-radius: 50%;
+	top: -125px;
+	left: 62px;
 }
 #main-menu > a:first-child > img {
 	max-width: 160px;
@@ -133,17 +133,11 @@ img{
 	padding: 30px 0 15px 0;
 	border-top: 1px solid #c5c5c5
 }
-#chat img{
-	width: 70px;
-    height: auto;
-    border: none;
-}
-#chat{
-	font-style: 10px;
-	position: fixed;
-	right: 30px;
-	bottom: 30px;
-}
-#menu a{
+.menu a{
 	display: block;
+}
+.menu{
+	position: absolute;
+	right: 393px;
+	top: -186px;
 }
