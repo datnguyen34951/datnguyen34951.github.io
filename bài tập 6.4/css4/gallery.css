@@ -1,0 +1,146 @@
+*{
+	position: relative;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #E5E5E5;
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	text-align: center;
+	margin: 30px 0 10px 0;
+	color: blue	;
+	font-size: 40px;
+}
+img{
+	max-width: 100%;
+
+}
+#main-menu a{
+	padding: 5px;
+	font-size: 20px;
+	color: #621;
+	text-decoration: none;
+}
+
+#main-menu a:hover, #main-menu a.active{
+	color: blue;
+}
+
+#main-menu a,active{
+	font-weight: bold;
+}
+
+.box{
+	padding: 15px;
+	float: left; ;
+	width: 32.3%;
+	border: 5px solid blue;
+	border-top-width: 5px;
+}
+
+.info{
+	border-color: #76a7fa;
+}
+
+.info span{
+	color: #76a7fa;
+}
+
+.contact{
+	border-color: #f9b256;
+}
+
+.contact span {
+	color: #f9b256;
+}
+
+.company {
+	border-color: violet;
+}
+
+.company span {
+	color: violet;
+}
+
+.elma {
+	border-color: red;
+}
+
+.elma span {
+	color: red;
+}
+.beryl {
+	border-color: blue;
+}
+
+.beryl span {
+	color: blue;
+}
+.kate {
+	border-color: yellow;
+}
+
+.kate span {
+	color: blue;
+}
+
+.kiri {
+	border-color: pink;
+}
+
+.kiri span {
+	color: red;
+}
+
+.katsura {
+	border-color: red;
+}
+
+.katsura span {
+	color: red;
+}
+
+.warp{
+	max-width: 1000px;
+	margin: auto;
+}
+#rectangle {
+	padding: 50px;
+	margin: 30px;
+	width: 500px;
+	height: 300px;
+	border: 10px solid;
+}
+#main-menu > a:first-child {
+	position: absolute;
+    padding: 4px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    top: -125px;
+    left: 62px;
+}
+#main-menu > a:first-child > img {
+	max-width: 160px;
+	border-radius: 50%;
+}
+#footer p{
+	margin: 0;
+	padding: 30px 0 15px 0;
+	border-top: 1px solid #c5c5c5
+}
+#chat img{
+	width: 70px;
+    height: auto;
+    border: none;
+}
+#chat{
+	font-style: 10px;
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+}
