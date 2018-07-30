@@ -10,6 +10,7 @@ h1{
 
 #main-menu a:hover, #main-menu a.active{
 	color: black;
+	text-align: center;
 }
 
 #main-menu a,active{
