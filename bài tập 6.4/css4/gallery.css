@@ -1,5 +1,4 @@
 *{
-	display: block;
 	position: relative;
 	text-align: center;
 	box-sizing: border-box;
@@ -144,4 +143,7 @@ img{
 	position: fixed;
 	right: 30px;
 	bottom: 30px;
+}
+#menu a{
+	display: block;
 }
