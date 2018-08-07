@@ -53,7 +53,9 @@
 	height: 250px;
 	float: left;
 	background-color: red;
-	border: 10px solid white;
+	border-bottom: 20px solid white;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
 }
 .box23{
 	width: 25%;
@@ -129,7 +131,10 @@
 	height:450px;
 	float: left;
 	background-color: red;
-	border: 10px solid white;
+	border-bottom: 10px solid white;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    border-top: 20px solid white;
 }
 .box522{
 	width: 100%;
