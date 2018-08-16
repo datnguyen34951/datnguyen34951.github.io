@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài tập DOM event</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" text = "text/css" href="css/style.css">
+</head>
+<body>
+	<h1>BT DOM EVENT</h1>	
+	<div id="box">
+		<div class="box1">
+			<div class="resul" >
+				<input type="text" id="resul">
+			</div>
+		</div>
+		<div class="box2">
+			<button onclick="resul.value = eval(Math.pow(resul.value,2))" id="mu" class ="tinhtoan" value="x^2">x <sup>2</sup></button>
+			<button onclick="resul.value = eval(Math.pow(resul.value,0.5))" id="mu" class = "tinhtoan" value="&#8730">&#8730</button>
+			<button onclick="resul.value = eval(Math.pow(10,resul.value))" id = "giaithua" class = "tinhtoan" value="10^x" >10<sup>x</sup>	</button>
+			<button onclick="resul.value=''" class = "C"  >C</button>
+
+			<button onclick="resul.value+=this.value" class = "num" value="7">7</button>
+			<button onclick="resul.value+=this.value" class = "num" value="8">8</button>
+			<button onclick="resul.value+=this.value" class = "num" value="9">9</button>
+			<button onclick="resul.value+=this.value" id="cong" class = "tinhtoan" value="+">+</button>
+
+			<button onclick="resul.value+=this.value" class = "num" value="4">4</button>
+			<button onclick="resul.value+=this.value" class = "num" value="5">5</button>
+			<button onclick="resul.value+=this.value" class = "num" value="6">6</button>
+			<button onclick="resul.value+=this.value" id="tru" class = "tinhtoan" value="-">-</button>
+
+			<button onclick="resul.value+=this.value" class = "num" value="1">1</button>
+			<button onclick="resul.value+=this.value" class = "num" value="2">2</button>
+			<button onclick="resul.value+=this.value" class = "num" value="3">3</button>
+			<button onclick="resul.value+=this.value" id="nhan" class = "tinhtoan" value="*">*</button>
+
+			<button onclick="resul.value+=this.value" class = "num" value="0">0</button>
+			<button onclick="resul.value+=this.value" class = "num" value=".">.</button>
+			<button onclick="resul.value=eval(resul.value)" id= "bang" class = "num" value ="=">=</button>
+			<button onclick="resul.value+=this.value" id = "chia"class = "tinhtoan" value="/">/</button>
+			
+
+			
+		</div>
+	</div>
+	<script type="text/javascript" src="js/a.js"></script>
+</body>
+</html>
