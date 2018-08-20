@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+</head>
+<body>
+	<div id = "warp">
+		<div id="content" class="content">
+			<div id="header">
+				<h1>Tuổi gì qua</h1>
+			</div>
+			<div class="ngang"><p></p></div>
+
+			<p id= "question"></p>
+
+			<div id = "answer">
+				<button class="cauhoi" onclick="loadnext(this)"   id = "dapan1" value="1"><span id="rep1" ></span></button>
+				<button class="cauhoi" onclick="loadnext(this)" id = "dapan2" value="2"><span id="rep2" ></span></button>
+				<button class="cauhoi" onclick="loadnext(this)"  id = "dapan3" value="3"><span id="rep3" ></span></button>
+				<button class="cauhoi" onclick="loadnext(this)" id = "dapan4" value="4"><span id="rep4"></span></button>
+			</div>
+
+			<div class="ngang"><p></p></div>
+			<div id = "footer">
+				
+			</div>
+		</div>
+		<div id="lost" style="display: none">
+			<h1>Trình độ bạn vẫn thấp</h1>
+			<img src="img/giphy.gif"  height="250px" onclick="back()">
+			<p>"Click vào HÌNH để phục hận"</p>
+		</div>	
+
+
+
+		
+	</div>
+	<div id="win" style="display: none" onclick="back()">
+		<h1>Bạn đã thấy mặt trời</h1>
+		
+	</div>
+	
+	<script type="text/javascript" src="js/cauhoi.js"></script>
+	<script type="text/javascript" src="js/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+body {
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("https://vietnammoi.vn/stores/news_dataimages/anhkd/082017/05/22/26-hinh-anh-dep-den-nghet-tho-du-khong-chinh-sua-photoshop-38-.2292.jpg ");
+}
+
+#warp{
+	margin: 5% 5% 5% 12%;
+	width: 1000px;
+	height: 500px;
+	background-color: white;
+	border: 5px solid #DCDCDC;
+	border-radius: 30px;
+	text-align: center;
+}
+.ngang{
+	height: 2px;
+	background-color: #696969;
+}
+#header {
+	font-family: cursive;
+	font-size: 25px;
+	color: #FF3333;	
+}
+.content{
+	max-width: 100%;
+	height:55%;
+}
+#question{
+	font-family: cursive;
+	font-size: 25px;
+	color: blue;
+}
+#dapan1, #dapan2, #dapan3, #dapan4 {
+	background-color: #FFFFFF;
+	width: 45%;
+	height:50px;
+	margin: 10px;
+	border: 1px solid red;
+	border-radius: 10px;
+	font-size: 20px;
+	font-family: cursive;
+}
+#tl1:hover, #tl2:hover, #tl3:hover, #tl4:hover{
+	background-color: #EED5B7;
+	cursor: url("http://i165.photobucket.com/albums/u49/milano1110/crystal/2680-50803.png"),auto;
+}
+#tl1:focus, #tl2:focus, #tl3:focus, #tl4:focus{
+	outline: 0;
+}
+#footer{
+	padding-top: 20px;
+	text-align: center;
+	font-family: cursive;
+	font-size: 15px;
+	color: #FF6600;
+}
+#win{
+	color: white;
+	text-align: center;
+	font-family: cursive;
+	font-size: 50px;
+}
+#lost p{
+	color: red;
+	font-size: 20px;
+	font-family: cursive;
+}
+#lost h1{
+	color: red;
+	font-size:50px;
+	font-family: cursive;
+}
