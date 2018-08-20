@@ -9,10 +9,15 @@ body {
 	margin: 5% 5% 5% 12%;
 	width: 1000px;
 	height: 500px;
-	background-color: white;
+	background-color: #eafffd;
 	border: 5px solid #DCDCDC;
 	border-radius: 30px;
 	text-align: center;
+}
+
+#hien h1{
+	color: red;
+	font-family: cursive;
 }
 .ngang{
 	height: 2px;
@@ -29,11 +34,11 @@ body {
 }
 #question{
 	font-family: cursive;
-	font-size: 25px;
+	font-size: 30px;
 	color: blue;
 }
 #dapan1, #dapan2, #dapan3, #dapan4 {
-	background-color: #FFFFFF;
+	background-color: #faeaea;
 	width: 45%;
 	height:50px;
 	margin: 10px;
@@ -42,11 +47,11 @@ body {
 	font-size: 20px;
 	font-family: cursive;
 }
-#tl1:hover, #tl2:hover, #tl3:hover, #tl4:hover{
+#dapan1:hover, #dapan2:hover, #dapan3:hover, #dapan4:hover{
 	background-color: #EED5B7;
 	cursor: url("http://i165.photobucket.com/albums/u49/milano1110/crystal/2680-50803.png"),auto;
 }
-#tl1:focus, #tl2:focus, #tl3:focus, #tl4:focus{
+#dapan1:focus, #dapan2:focus, #dapan3:focus, #dapan4:focus{
 	outline: 0;
 }
 #footer{

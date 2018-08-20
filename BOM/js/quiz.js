@@ -12,9 +12,14 @@ var  opt3 = document.getElementById('rep3');
 var  opt4 = document.getElementById('rep4');
 var win = document.getElementById('win');
 var lost = document.getElementById('lost');
+var start = document.getElementById("hien");
 
 function back(){
 	window.location.href = "index.html";
+}
+function start1(){
+	start.style.display = "none";
+	content.style.display = "";
 }
 
 function chaycauhoi(cauhoiIndex){
