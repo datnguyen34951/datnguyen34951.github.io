@@ -48,5 +48,5 @@ function loadnext(x){
 }
 function footer(){
 	var diemcuoi = document.getElementById("footer");
-	diemcuoi.innerHTML = "Trình độ đạt đến :" + (socauhoi ) + "/" + tongcauhoi;
+	diemcuoi.innerHTML = "Trình độ đạt đến :" + (diem) + "/" + tongcauhoi;
 }
