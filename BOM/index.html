@@ -9,13 +9,14 @@
 <body>
 	<div id = "warp">
 		<div id="hien">
-			<h1>Bạn có thể vượt qua thử thách của chúng tôi không?</h1>
-			<h1>Bạn không đủ khả năng đâu</h1>
-			<h1>Muốn thử hãy click vào đây</h1>
+			<h1>Tuổi gì qua</h1>
+			<h2>Bạn không đủ khả năng đâu</h2>
+			<h2>Muốn thử hãy click vào đây</h2>
 			
 			<img src="https://media.istockphoto.com/vectors/start-icon-vector-id516367852?k=6&m=516367852&s=612x612&w=0&h=6XBKXZB0_xIClabwpvFvrvpXFTLHYosHEKqo8YO5S90=" height="200px" onclick = "start1()">
 		</div>
 		<div id="content" class="content" style="display: none">
+			
 			<div id="header">
 				<h1>Tuổi gì qua</h1>
 			</div>
@@ -24,6 +25,10 @@
 			<p id= "question"></p>
 
 			<div id = "answer">
+				<div>
+					<audio id ="start2"><source src="nhacnen.mp3" type="audio/mpeg">
+					</audio>
+				</div>
 				<button class="cauhoi" onclick="loadnext(this)"   id = "dapan1" value="1"><span id="rep1" ></span></button>
 				<button class="cauhoi" onclick="loadnext(this)" id = "dapan2" value="2"><span id="rep2" ></span></button>
 				<button class="cauhoi" onclick="loadnext(this)"  id = "dapan3" value="3"><span id="rep3" ></span></button>
@@ -31,25 +36,31 @@
 			</div>
 
 			<div class="ngang"><p></p></div>
-			<div id = "footer">
-				
-			</div>
+			<div id = "footer"></div>
+
 		</div>
 		<div id="lost" style="display: none">
 			<h1>Trình độ bạn vẫn thấp</h1>
-			<img src="img/giphy.gif"  height="250px" onclick="back()">
+			<img src="img/giphy.gif"  height="250px" style="border-radius: 20px" onclick="back()">
 			<p>"Click vào HÌNH để phục hận"</p>
+			<div>
+				<audio id ="end1" autoplay=""><source src="lost.mp3" type="audio/mpeg">
+				</audio>
+			</div>
 		</div>	
-
-
-
-		
-	</div>
-	<div id="win" style="display: none" onclick="back()">
-		<h1>Bạn đã thấy mặt trời</h1>
-		
 	</div>
 	
+	<div id="win" style="display: none" >
+
+		<p>Vỗ tay! Vỗ tay!</p>
+		<img src="https://media2.giphy.com/media/qnOBmH70CGSVa/giphy.gif" width="800px" height="auto" onclick="back()">
+		<div>
+			<audio id ="end2" autoplay=""><source src="votay.mp3" type="audio/mpeg">
+			</audio>
+		</div>
+
+	</div>
+
 	<script type="text/javascript" src="js/cauhoi.js"></script>
 	<script type="text/javascript" src="js/quiz.js"></script>
 </body>

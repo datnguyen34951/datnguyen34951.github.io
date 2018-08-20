@@ -14,10 +14,28 @@ body {
 	border-radius: 30px;
 	text-align: center;
 }
-
+#win {
+	font-size: 50px;
+	font-family: cursive;
+	border-radius: 10px;
+	text-align: center;	
+	animation: title 5s infinite;
+}
+@keyframes title{
+	0%{color: red}
+	50%{color: blue}
+	100%{color: yellow}
+}
 #hien h1{
+	font-size: 50px;
 	color: red;
 	font-family: cursive;
+	animation: title 5s infinite;
+}
+#hien h2{
+	color: red;
+	font-family: cursive;
+	font-size: 30px;
 }
 .ngang{
 	height: 2px;
@@ -27,6 +45,7 @@ body {
 	font-family: cursive;
 	font-size: 25px;
 	color: #FF3333;	
+	animation: title 5s infinite;
 }
 .content{
 	max-width: 100%;
@@ -58,22 +77,19 @@ body {
 	padding-top: 20px;
 	text-align: center;
 	font-family: cursive;
-	font-size: 15px;
+	font-size: 20px;
 	color: #FF6600;
 }
-#win{
-	color: white;
-	text-align: center;
-	font-family: cursive;
-	font-size: 50px;
-}
+
 #lost p{
 	color: red;
 	font-size: 20px;
 	font-family: cursive;
+	animation: title 5s infinite;
 }
 #lost h1{
 	color: red;
 	font-size:50px;
 	font-family: cursive;
+	animation: title 5s infinite;
 }

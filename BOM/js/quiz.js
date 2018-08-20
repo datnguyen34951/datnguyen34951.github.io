@@ -14,12 +14,15 @@ var win = document.getElementById('win');
 var lost = document.getElementById('lost');
 var start = document.getElementById("hien");
 
+
 function back(){
 	window.location.href = "index.html";
 }
 function start1(){
 	start.style.display = "none";
 	content.style.display = "";
+	document.getElementById('start2').autoplay = true;
+	document.getElementById('start2').load();
 }
 
 function chaycauhoi(cauhoiIndex){
@@ -42,10 +45,16 @@ function loadnext(x){
 	if(socauhoi == tongcauhoi && diem == 5){
 		warp.style.display = "none";
 		win.style.display = "";
+		document.getElementById('end2').autoplay = true;
+		document.getElementById('end2').load();
+		
 	}
 	if (socauhoi == tongcauhoi && diem <5) {
 		content.style.display = "none";
 		lost.style.display = "";
+		document.getElementById('end1').autoplay = true;
+		document.getElementById('end1').load();
+		
 		return;
 	}
 	chaycauhoi(socauhoi);
