@@ -102,19 +102,19 @@ body{
     to {opacity: 1}
 }
 #content{
-    padding: 0 5% 0 5%;
+    padding: 100px 3% 0 3%;
     display: flex;
     flex-direction:row;
 }
 #content1{
-    text-align: center;
-    padding: 0 5% 0 5%;
+    padding: 10px;
+    max-width: 70%;
 }
 
 .title{
     padding-bottom: 20px;
     text-decoration: underline;
-    font-size: 50px;
+    font-size: 40px;
     color: blue;
     background-color: white;
 }
@@ -125,11 +125,6 @@ body{
 }
 .ds21:hover, .album11:hover, .casi:hover img{
     transform: scale(1.05);
-}
-.album{
-    padding-top: 100px;
-    width: 80%;
-
 }
 .album11{
     padding:10px;
@@ -152,5 +147,74 @@ body{
     padding: 5% 0 5% 0;
 }
 .bh2{
+    max-width: 100%;
     padding: 5%;
 }
+.bh2 p{
+    color: blue;
+}
+.bh2 p:hover{
+    color: red;
+}
+.conten2{
+    width: 30%;
+    padding: 10px;
+}
+.quocgia button{
+    height: 40px;
+    border: 1px solid gray;
+    text-align: center;
+    background-color: white;
+    width: 33%;
+    padding: 10px;
+    font-size: 20px;
+}
+.bh11{
+    padding: 160px  0 20px 20px ;
+    width: 100%;
+    height: 200px;
+    background-image: url(/img/slide1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: left;
+    
+   
+}
+.bh11 h1{
+    color: white;
+    font-size: 25px;
+}
+.bh12 {
+    padding: 20px;
+}
+.bh12 p{
+    color: black;
+    text-align: left;
+    font-size: 25px;
+}
+.bh12 i{
+    color: black;
+    text-align: left;
+    font-size: 25px;
+}
+.bh12 p:hover, i:hover{
+    color: red;
+}
+#top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+    font-size: 20px;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  #footer{
+    text-align:center;
+    margin: 0;
+	padding: 30px 0 15px 0;
+	border-top: 1px solid #c5c5c5
+  }
+
+  
