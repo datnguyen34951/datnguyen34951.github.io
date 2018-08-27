@@ -1,0 +1,36 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.labai1, .labai2, .labai3, .labai4, .labai5{
+    position: relative;
+    float: left;
+    padding: 10px;
+}
+img{
+    width: 300px;
+    height: 400px;
+}
+
+.sau{
+    padding: 10px;
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.labai1:hover .sau,.labai2:hover .sau, .labai3:hover .sau,.labai4:hover .sau, .labai5:hover .sau{
+    transform : rotateY(0deg);
+
+}
+.labai1:hover .truoc,.labai2:hover .truoc, .labai3:hover .truoc,.labai4:hover .truoc, .labai5:hover .truoc{
+    transform: rotateY(180deg);
+}
+.labai1 .sau, .labai1 .truoc,.labai2 .sau, .labai2 .truoc,.labai3 .sau, .labai3 .truoc,.labai4 .sau, .labai4 .truoc,.labai5 .sau, .labai5 .truoc{
+    transition: all 0.5s;
+    backface-visibility: hidden;
+}
