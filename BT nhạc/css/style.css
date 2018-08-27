@@ -131,10 +131,14 @@ body{
 }
 .casi img{
     border-radius: 50%;
-    width: 170px;
-    height: 170px;
+    width: 165px;
+    height: 165px;
     flex-direction: column; 
     padding: 20px;
+}
+.casi1{
+    max-width: 100%;
+    display: flex;
 }
 .bh{
     display: flex;
@@ -148,9 +152,10 @@ body{
 }
 .bh2{
     width: 100%;
-    padding: 5%;
+    padding: 2% 5% 0 5%;%;
 }
 .bh2 p{
+    font-size: 18px;
     color: blue;
 }
 .bh2 p:hover{
