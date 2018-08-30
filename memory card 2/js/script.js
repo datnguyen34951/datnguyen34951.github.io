@@ -41,6 +41,7 @@ function flip(card) {
             //Giống nhau
             setTimeout(function(){
             console.log('Giống nhau');
+            document.getElementById("giongnhau").play();
             $(card).css('opacity','0');
             current.css('opacity','0');
             $(card).css('visibility','hidden');

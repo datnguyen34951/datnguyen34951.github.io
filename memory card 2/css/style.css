@@ -3,16 +3,22 @@
     margin: 0px;
     box-sizing: border-box;
 }
+body{
+    background-size: cover;
+    background-image: url("https://img2.goodfon.com/wallpaper/big/9/96/yugioh-dark-magician-blue.jpg");
+}
 .warp{
     position: relative;
     margin: auto;
     width: 1320px;
     height: auto;
+   
 }
 .content{
     width: 70%;
     margin: auto;
     position: relative;
+    
 
 }
 .gird{
