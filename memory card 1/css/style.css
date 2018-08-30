@@ -17,15 +17,15 @@
 }
 .gird{
     float: left;
-    padding: 10px;
+    padding: 5px;
     margin: auto;
 }
 .cards{
-    padding: 10px;
+    padding: 5px;
     position: relative;
 }
 img{
-    width: 100px;
+    width: 120px;
     height: auto;
 }
 
@@ -36,12 +36,10 @@ img{
     top: 0;
     left: 0;
 }
-.cards:hover .sau{
-    transform: rotateY(0deg);
+.cards:hover{
+    transform: scale(1.02);
 }
-.cards:hover .truoc{
-    transform: rotateY(180deg);
-}
+
 .sau, .truoc{
     transition: all 2s;
     backface-visibility: hidden;

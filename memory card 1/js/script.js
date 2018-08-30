@@ -16,7 +16,20 @@ function shuffle(array){
     }
     return array;
 }
-
+function flip(card) {
+    $(card).toggleClass('flipped');
+    if(!current){
+        current = $(card);
+    }else{
+        if (current.attr('data-name') != $(card).attr('data-name')){
+            //Khác nhau
+            console.log('Khác nhau');
+        }else {
+            //Giống nhau
+            console.log('Giống nhau');
+        }
+    }
+};
 $(document).ready(function(){
     cards = cards.concat(cards); // nhân đôi lá bài
     cards = shuffle(cards); // Tạo random các lá bài
