@@ -1,0 +1,79 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-size: cover;
+    background-image: url("../img/background.jpg");
+}
+.warp{
+    position: relative;
+    margin: auto;
+    width: 1320px;
+    height: auto;
+    
+}
+.content{
+    margin: 0 7%;
+    position: relative;
+}
+.gird{
+    padding: 5px;
+    float: left;
+    margin: auto;
+}
+
+.cards{
+    position: relative;
+}
+.flipped .sau{
+    transform: rotateY(0deg);
+}
+.flipped .truoc{
+    transform: rotateY(360deg); 
+}
+img{
+    width: 130px;
+    height: auto;
+}
+.sau{
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.cards:hover{
+    box-shadow: 0 0 15px 5px rgba(200,240,240,.75);
+    cursor: url(../img/fly.png),auto;
+    transform: scale(1.02);
+}
+
+.sau, .truoc{
+    transition: all 0.5s;
+    backface-visibility: hidden;
+}
+#time{
+    width: 90%;
+    height: 25px;
+    margin: 1% 5%;
+    overflow: auto;
+    z-index: 9;
+    background-color:red;
+}
+#batdau{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.yugi, .kaiba {
+    padding-top: 10%;
+}
+.yugi img{
+    width: auto;
+    height: 500px;
+}
+.kaiba img{
+    width: auto;
+    height: 500px;
+}
