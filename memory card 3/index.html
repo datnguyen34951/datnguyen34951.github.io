@@ -8,43 +8,70 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <section id="snow"></section>
     <div class="warp">
         <div id="batdau">
-            <div class="yugi">
-            <img src="./img/yugi.png">
-            </div>
-            <div class="start">
-                <p>Cuộc Chiến Bắt Đầu</p>
-                <img >
-            </div>
-            <div class="kaiba">
-                <img src="./img/kaiba.png">
-            </div>
-            
-        </div>
-        <div id="choi" style="display:none">
-            <div id="time">
+            <audio id="modau" controls = "controls" style="opacity: 0">
+                <source src="start.mp3" type="audio/mpeg">
+                </audio>        
+                <div class="yugi">
+                    <img src="./img/yugi.png">
+                </div>
+                <div id ="start">
+                    <img class="logo" src="./img/logo.gif">
+                    <img class ="start" src="./img/start.png">
+                </div>
+                <div class="kaiba">
+                    <img src="./img/kaiba.png">
+                </div>
                 
             </div>
-            <div class="content" >
-                <div class="gird">
-                    <div class="cards">
-                        <div class="sau">
-                            <img  src="http://cdn2.game4v.com/2017/11/DarkMagician-CT13-EN-UR-LE.png">
+            <div id="choi" style="display:none" >
+                <div id="time"> </div>
+                <div class="content" >
+                    <div class="gird">
+                        <div class="cards">
+                            <div class="sau">
+                                <img  src="http://cdn2.game4v.com/2017/11/DarkMagician-CT13-EN-UR-LE.png">
+                            </div>
+                            <div class="truoc">
+                                <img  src="./img/truoc.png">
+                            </div>
                         </div>
-                        <div class="truoc">
-                            <img  src="./img/truoc.png">
-                        </div>
+                        
                     </div>
-                    
                 </div>
+            </div> 
+            <div id="thatbai" style="display:none" >
+                <h1>TIME OUT</h1>
+                <div id="choilai1">
+                    <h2>Play Again</h2>
+                    <img id="choilai"src="./img/choilai.png">
+                    <audio id="fail"><source src="fail.mp3" type="audio/mpeg"></audio>
+                        
+                    </div>
+                </div>
+            <div id="win"  style="display:none">
+                    <h1>YOU WIN</h1>
+                <img src="./img/win2.png"> 
+                
             </div>
-        </div> 
-        <audio id="giongnhau">
-            <source src="giongnhau.mp3" type="audio/mpeg">
-            </audio>
-        </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="js/script.js"></script>
-    </body>
-    </html>
+            <audio id="phaohoa">
+                <source src="phaohoa.mp3" type="audio/mpeg">
+            </audio>  
+                <audio id="giongnhau">
+                    <source src="giongnhau.mp3" type="audio/mpeg">
+                    </audio>
+                    <audio id="clickchuot">
+                        <source src="clickchuot.mp3" type="audio/mpeg">
+                        </audio>
+                        <audio id="nhacnen">
+                            <source src="nhacnen.mp3" type="audio/mpeg">
+                            </audio>
+                            
+                            
+                        </div>
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                        <script src="js/script.js"></script>
+                    </body>
+                    </html>

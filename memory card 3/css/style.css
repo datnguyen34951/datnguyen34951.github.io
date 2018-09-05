@@ -45,7 +45,7 @@ img{
 }
 .cards:hover{
     box-shadow: 0 0 15px 5px rgba(200,240,240,.75);
-    cursor: url(../img/fly.png),auto;
+    cursor: url('../img/fly.cur'),auto;
     transform: scale(1.02);
 }
 
@@ -66,14 +66,164 @@ img{
     flex-direction: row;
     justify-content: space-between;
 }
-.yugi, .kaiba {
-    padding-top: 10%;
+.yugi{
+    padding-top: 15%;
+    animation: yugi 1.5s forwards;
+}
+@keyframes yugi{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-400px);
+    }
+    
+    100%{
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+.kaiba{
+    padding-top: 15%;
+    animation: kaiba 1.5s forwards;   
+}
+@keyframes kaiba{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(400px);
+    }
+    
+    100%{
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
 }
 .yugi img{
     width: auto;
-    height: 500px;
+    height: 450px;
 }
 .kaiba img{
     width: auto;
+    height: 450px;
+}
+.start{
+    padding-top: 10%;
+    width: 425px;
+    height: auto;
+}
+.logo{
+    padding-top: 10%;
+    width: 425px;
+    height: auto;
+    transform: scale(1.5);
+}
+.start:hover{
+    cursor: url('../img/fly.cur'),pointer;
+    transform: scale(1.1);
+}
+#start{
+    animation: start 1.5s forwards;  
+}
+@keyframes start{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-400px);
+    }
+    
+    100%{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+#thatbai{
+    background-image: url(../img/lost.gif);
+    background-size:cover;
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    border-radius: 5%;
+    text-align: center;
+    font-size: 50px;
+    color: red;
+    border:2px solid black;
+}
+#thatbai h1, h2{
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+#choilai1{
+ padding: 10%;
+}
+#choilai{
+    border-radius: 50%;
+    width: 150px;
+}
+#choilai:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#win{
+    margin-top: 2%;
+    text-align: center;
+    animation: win 5s linear infinite;
+    font-size: 50px;
+}
+#win img{
+    width: auto;
     height: 500px;
+    
+}
+@keyframes win{
+    0%{ color: yellow}
+    50%{color: cyan}
+    100%{color: red}
+}
+/*Hieu ung tuyet roi*/
+#snow {
+    background-color: transparent;
+    background-image: url(http://wp.agens.no/smakebit/wp-content/themes/smakebiten/img/snow1.png), url(http://wp.agens.no/smakebit/wp-content/themes/smakebiten/img/snow2.png);
+    -webkit-animation: snow 20s linear infinite;
+    -moz-animation: snow 20s linear infinite;
+    -ms-animation: snow 20s linear infinite;
+    animation: snow 20s linear infinite;
+    z-index: 999;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin-top: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+/*Keyframes*/
+
+@keyframes snow { 
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    
+    100% { background-position: 500px 1000px, 400px 400px, 300px 300px }
+}
+
+@-moz-keyframes snow { 
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    
+    100% { background-position: 500px 1000px, 400px 400px, 300px 300px }
+}
+
+@-webkit-keyframes snow { 
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+
+@-ms-keyframes snow { 
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    
+    100% { background-position: 500px 1000px, 400px 400px, 300px 300px }
 }
