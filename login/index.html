@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="warp">
+        <div class="content">
+            <h1>Đăng ký tài khoản</h1>
+            <form  id="form" name = "dangky" action="retul.html"> 
+                
+                <input type="text" id="name" name="name" placeholder="Họ và tên" ><p class="error"></p><br/>
+                
+                <input type="text" id="email" name="email" placeholder="Email" ><p class="error"></p><br/>
+                
+                <input type="password" id="password" name="pass" placeholder="Mật khẩu" ><p class="error"></p><br/>
+                
+                <input type="number" id="dienthoai" name="dienthoai" placeholder="Điện thoại" ><p class="error"></p><br/>
+                <input type="text" id="diachi" name="diachi" placeholder="Địa chỉ" ><p class="error"></p><br/>
+                <div class="ngaysinh">
+                    <h3>Ngày sinh</h3>
+                    <select name="day" id="day">
+                        
+                    </select>
+                    <select name="month" id="month">
+                        
+                    </select>
+                    <select name="year" id="year">
+                        
+                    </select>
+                </div>
+                
+                <div id="gioitinh"> <input style = "width:30px" type="radio" name="gioitinh" id="nam" value="Nam"><label for="nam">Nam</label>
+                    <input type="radio"style = "width:30px"  name="gioitinh" id="nu" value="Nữ"><label for="nu">Nữ</label><br/></div>
+                    <input type="submit" value="Đăng ký" id="dangnhap">
+                    
+                </form>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <script>
+            var ngay = "";
+            for (var i = 0 ; i <32 ; i++){
+                if(i===0){
+                    ngay +=`<option value="${i}">Ngày</option>`;
+                }else{
+                    ngay+= `<option value="${i}">${i}</option>`;  
+                }
+                $('#day').html(ngay);
+            }
+            var thang = "";
+            for (var i = 0 ; i <13 ; i++){
+                if (i ===0) {
+                    thang+= `<option value="${i}">Tháng </option>`;  
+                }else {
+                    thang+=
+                    `<option value="${i}">Tháng ${i}</option>`;
+                }
+                $('#month').html(thang);
+            }
+            
+            var nam = "";
+            for (var i = 1980 ; i <2020 ; i++){
+                if (i ===1980) {
+                    nam+= `<option value="${i}">Năm </option>`;  
+                }else {
+                    nam+=
+                    `<option value="${i}"> ${i}</option>`;
+                }
+                $('#year').html(nam);
+            }
+            $('#form').on('submit',function(){
+                var Valid = true;
+                if($("#name").val().trim()==""){
+                    $('#name').next('p').text('Tên không hợp lệ');
+                    Valid = false;
+                }else{
+                    $('#name').next('p').text('');
+                }
+                if($("#email").val().match(/^[\w\.=-]+@[\w\.-]+\.[\w]{2,3}$/)==null){
+                    $('#email').next('p').text('Email không hợp lệ');
+                    Valid = false;
+                } else{
+                    $('#email').next('p').text('');
+                }
+                if($("#password").val().trim()==""){
+                    $('#password').next('p').text('Mật khẩu không hợp lệ');
+                    Valid = false;
+                }else{
+                    $('#password').next('p').text('');
+                }
+                if($("#dienthoai").val().trim()==""){
+                    $('#dienthoai').next('p').text('Số điện thoại không hợp lệ');
+                    Valid = false;
+                }else{
+                    $('#dienthoai').next('p').text('');
+                }
+                if($("#diachi").val().trim()==""){
+                    $('#diachi').next('p').text('Địa chỉ không hợp lệ');
+                    Valid = false;
+                }else{
+                    $('#diachi').next('p').text('');
+                }
+            
+                return Valid;
+            })
+        </script>
+    </body>
+    </html>

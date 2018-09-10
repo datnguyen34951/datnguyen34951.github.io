@@ -24,8 +24,25 @@ function Component(img,x,y,width,height){
 	this.y=y;
 	this.width = width;
 	this.height = height;
+	this.crashWith = function(otherobj) {
+        var myleft = this.x;
+        var myright = this.x + (this.width);
+        var mytop = this.y;
+        var mybottom = this.y + (this.height);
+        var otherleft = otherobj.x;
+        var otherright = otherobj.x + (otherobj.width);
+        var othertop = otherobj.y;
+        var otherbottom = otherobj.y + (otherobj.height);
+        var crash = true;
+        if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
+            crash = false;
+        }
+        return crash;
+    }
 
 }
+
+
 Component.prototype.drawImg = function() {
 	context.drawImage(this.img, this.x, this.y, this.width, this.height);
  	// body...
@@ -51,6 +68,7 @@ window.addEventListener('click',handleEventKeyDown)
  }
 
  function update(){
+
  	const background = new Component(bg,0,0,canvas.width,canvas.height);
  	background.drawImg();
  	const pipeN = new Component(pipeNorth,300,0,50,200);
@@ -81,5 +99,10 @@ window.addEventListener('click',handleEventKeyDown)
 
  	}
  	requestAnimationFrame(update);
+ 	if (bird.y>=360||bird.y<=0) {
+ 		stop();
+           }
  }
+
  update();
+ 
